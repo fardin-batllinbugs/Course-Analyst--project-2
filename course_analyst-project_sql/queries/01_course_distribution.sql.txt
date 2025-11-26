@@ -1,0 +1,8 @@
+SELECT 
+    category,
+    sub_category,
+    course_type,
+    COUNT(*) AS total_courses
+FROM online_courses
+GROUP BY category, sub_category, course_type
+ORDER BY total_courses DESC;
